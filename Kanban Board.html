@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="Kanban_Board.css">
+    <style>
+        .column {
+            float: left;
+            width: 18%;
+            padding: 10px;
+            height: 300px; /* Optional */
+            border: 1px solid black;
+            margin: 1%;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .task {
+            border: 1px solid grey;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kanban Board</h1>
+        <button id="logoutButton">Logout</button>
+    </header>
+
+    <div class="row">
+        <div class="column" id="backlog">
+            <h2>Backlog</h2>
+            <div class="task">Task 1</div>
+            <div class="task">Task 2</div>
+        </div>
+        <div class="column" id="doing">
+            <h2>Doing</h2>
+            <!-- Tasks will go here -->
+            <div class="task">Task 3</div>
+            <div class="task">Task 4</div>
+        </div>
+        <div class="column" id="review">
+            <h2>Review</h2>
+            <!-- Tasks will go here -->
+            <div class="task">Task 5</div>
+        </div>
+        <div class="column" id="done">
+            <h2>Done</h2>
+            <!-- Tasks will go here -->
+            <div class="task">Task 6</div>
+        </div>
+        <div class="column" id="overdue">
+            <h2>Overdue</h2>
+            <div class="task">Task 7</div>
+            <div class="task">Task 8</div>
+            <!-- Tasks will go here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>2024 Annabel's Kanban Board</p>
+    </footer>
+</body>
+</html>
